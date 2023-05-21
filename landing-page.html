@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/min.css">
+  <link rel="stylesheet" href="css/hover-min.css">
+  <link rel="stylesheet" href="css/odometer.css">
+</head>
+<body class="mobile" data-new-gr-c-s-check-loaded="14.1110.0" data-gr-ext-installed="">
+  <div id="wrap">
+  <script type="text/javascript">
+function loginAlert(e) {
+  alert('로그인이 필요합니다.')
+  return
+}
+
+$(function() {
+  $('span.dark_mode a').click(function() {
+      if ($(this).hasClass('on')) {
+          return;
+      }
+
+      $('span.dark_mode a').removeClass('on');
+      $(this).addClass('on');
+
+      if ($(this).hasClass('btn_dark')) {
+          $("body").addClass("dark");
+          setCookie('mode', 'dark');
+      } else {
+          $("body").removeClass("dark");
+          setCookie('mode', '');
+      }
+  });
+
+  $('li.dark_mode a').click(function() {
+      if ($(this).hasClass('on')) {
+          return;
+      }
+
+      $('li.dark_mode a').removeClass('on');
+      $(this).addClass('on');
+
+      if ($(this).hasClass('btn_dark')) {
+          $("body").addClass("dark");
+          setCookie('mode', 'dark');
+      } else {
+          $("body").removeClass("dark");
+          setCookie('mode', '');
+      }
+  });
+});
+</script>
+<div id="header">
+<div class="header_top">
+  <div class="inner_wrap">
+      <h1 class="logo">
+          <a href="/main/index" class="img_logo">
+              <img src="./img/common/img_logo.png">
+              <span class="blind">your logo</span>
+          </a>
+      </h1>
+  </div>
+</div>
+<div class="header_navigation">
+  <div class="header_gnb">
+      <ul id="gnb" class="gnb">
+          <li class="hvr-bounce-in">
+              <a href="javascript:loginAlert()">라이브카지노</a>
+          </li>
+          <li class="hvr-bounce-in">
+              <a href="javascript:loginAlert()">슬롯게임</a>
+          </li>
+          <li class="hvr-bounce-in">
+              <a href="javascript:loginAlert()">스포츠</a>
+          </li>
+                              <li class="hvr-bounce-in">
+                  <a href="javascript:loginAlert()">미니게임</a>
+              </li>
+                          <li class="hvr-bounce-in">
+              <a href="javascript:loginAlert()">입금신청</a>
+          </li>
+          <li class="hvr-bounce-in">
+              <a href="javascript:loginAlert()">출금신청</a>
+          </li>
+          <li class="hvr-bounce-in">
+              <a href="javascript:loginAlert()">베팅내역</a>
+          </li>
+      </ul>
+  </div>
+  <div class="header_login">
+      <div class="login_before">
+          <form id="login-form" action="/user/act" method="post">
+<input type="hidden" name="_csrf" value="h-KZuwdU_onBAQQflY8c2uZ8WwdrS10g2NlTmQfyTxDCgemWVmGq-o4xQHKm-lS4tA0wRh0PaxSZvBX0dYclWQ==">                <input type="hidden" name="mode" value="login">                <ul class="form">
+              <li>
+                  <div class="input_group">
+                      <span class="icon">
+                          <i class="fa fa-user"></i>
+                      </span>
+                      <input type="text" id="username" name="username" value="" maxlength="20" placeholder="아이디" title="아이디 입력" class="input_login" autocomplete="off">
+                  </div>
+              </li>
+              <li>
+                  <div class="input_group">
+                      <span class="icon">
+                          <i class="fa fa-lock"></i>
+                      </span>
+                      <input type="password" id="password" name="password" maxlength="16" placeholder="비밀번호" title="비밀번호 입력" class="input_login" autocomplete="off">
+                  </div>
+              </li>
+              <li>
+                  <button type="submit" name="button" class="btn_login" onclick="return postSubmit('login-form')">로그인</button>
+                  <a href="#" class="btn_login join">회원가입</a>
+              </li>
+          </ul>
+          </form>            </div>
+  </div>
+</div>
+<button type="button" class="btn_all_menu"></button>
+<div class="all_menu left">
+  <div class="inner">
+      <div class="aside_top_wrap">
+          <a href="/"><img src="./img/common/img_logo.png" width="180"></a>
+      </div>
+      <div class="conts">
+          <ul class="main_menu">
+              <li>
+                  <a href="javascript:loginAlert()">
+                      <span><i class="far fa-spade"></i> 라이브카지노</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="javascript:loginAlert()">
+                      <span><i class="far fa-ring"></i> 슬롯게임</span>
+                  </a>
+              </li>
+                                      <li>
+                      <a href="javascript:loginAlert()">
+                          <span><i class="far fa-dice"></i> 미니게임</span>
+                      </a>
+                  </li>
+                              </ul>
+          <ul class="dep1">
+              <li>
+                  <a href="javascript:loginAlert()">
+                      <span><i class="far fa-won-sign"></i> 입금신청</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="javascript:loginAlert()">
+                      <span><i class="far fa-dollar-sign"></i> 출금신청</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="javascript:loginAlert()">
+                      <span><i class="far fa-clipboard-list-check"></i> 베팅내역</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="javascript:loginAlert()">
+                      <span><i class="far fa-clipboard-list"></i> 경기결과</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="javascript:loginAlert()">
+                      <span><i class="far fa-regular fa-gift"></i> 이벤트</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="javascript:loginAlert()">
+                      <span><i class="far fa-bell"></i> 공지사항</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="javascript:loginAlert()">
+                      <span><i class="far fa-user"></i> 마이페이지</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="javascript:loginAlert()">
+                      <span><i class="far fa-user-edit"></i> 정보수정</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="javascript:loginAlert()">
+                      <span><i class="far fa-envelope"></i> 쪽지함</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="javascript:loginAlert()">
+                      <span><i class="far fa-headset"></i> 고객센터</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="javascript:loginAlert()">
+                      <span><i class="far fa-calendar-check"></i> 출석체크</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="javascript:loginAlert()">
+                      <span><i class="far fa-ticket"></i> 쿠폰내역</span>
+                  </a>
+              </li>
+          </ul>
+      </div>
+  </div>
+  <a href="#" class="btn_close"></a>
+</div>
+<div class="gnb_dim"></div>
+</div>
+<div id="container">
+<div class="main_user_login">
+  <div class="login_before">
+      <form id="login-form-mobile" action="/user/act" method="post">
+<input type="hidden" name="_csrf" value="h-KZuwdU_onBAQQflY8c2uZ8WwdrS10g2NlTmQfyTxDCgemWVmGq-o4xQHKm-lS4tA0wRh0PaxSZvBX0dYclWQ==">            <input type="hidden" name="mode" value="login">            <ul class="form">
+          <li>
+              <div class="input_group">
+                  <span class="icon">
+                      <i class="fa fa-user"></i>
+                  </span>
+                  <input type="text" id="username-mobile" name="username" value="" maxlength="20" placeholder="아이디" title="아이디 입력" class="input_login" autocomplete="off">
+              </div>
+          </li>
+          <li>
+              <div class="input_group">
+                  <span class="icon">
+                      <i class="fa fa-lock"></i>
+                  </span>
+                  <input type="password" id="password-mobile" name="password" maxlength="16" placeholder="비밀번호" title="비밀번호 입력" class="input_login" autocomplete="off">
+              </div>
+          </li>
+          <li>
+              <button type="submit" name="button" class="btn_login" onclick="return postSubmit('login-form-mobile')">로그인</button>
+              <a href="#" class="btn_login join">회원가입</a>
+          </li>
+      </ul>
+      </form>        </div>
+</div>        <script type="text/javascript">
+function goLogin() {
+  alert('로그인 후 이용하세요');
+}
+</script>
+
+<link rel="stylesheet" href="/css/odometer-theme-car.css">
+<script src="/js/odometer.js"></script>
+
+<div class="main_swiper pc_swiper">
+<div class="swiper-container swiper-container-fade swiper-container-initialized swiper-container-horizontal">
+  <div class="swiper-wrapper" style="transition-duration: 300ms;"><a href="토토분양.com" class="swiper-slide swiper-slide-duplicate" style="background-image: url(./img/notice/img_main_1.png)" data-swiper-slide-index="0"></a>
+      <a href="토토분양.com" class="swiper-slide" style="background-image: url(./img/notice/img_main_1.png)" data-swiper-slide-index="0"></a>        <a href="토토분양.com" class="swiper-slide swiper-slide-duplicate" style="background-image: url(./img/notice/img_main_1.png)" data-swiper-slide-index="0"></a></div>
+  <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>
+<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+</div>
+
+<div class="main_swiper mobile_swiper">
+<div class="swiper-container swiper-container-initialized swiper-container-horizontal">
+  <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-1786px, 0px, 0px);"><div class="swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev" style="background-image: url(&quot;/img/notice/img_main_mobile_1.png?2117&quot;); width: 893px;" data-swiper-slide-index="0"></div>
+      <div class="swiper-slide swiper-slide-duplicate-active swiper-slide-prev swiper-slide-duplicate-next" style="background-image: url(&quot;/img/notice/img_main_mobile_1.png?2117&quot;); width: 893px;" data-swiper-slide-index="0"></div>        <div class="swiper-slide swiper-slide-duplicate swiper-slide-active swiper-slide-duplicate-prev" style="background-image: url(&quot;/img/notice/img_main_mobile_1.png?2117&quot;); width: 893px;" data-swiper-slide-index="0"></div></div>
+  <div class="swiper-pagination swiper-pagination-bullets swiper-pagination-clickable"></div>
+<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+</div>
+
+<div class="visual_wrap">
+<div class="visual">
+  <div class="jack_wrap">
+      <div class="jack_left">
+          <div class="jack_num">
+              <div id="odometer" class="odometer odometer-auto-theme odometer-animating-up odometer-animating"><div class="odometer-inside"><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><div class="odometer-value odometer-last-value odometer-first-value">6</div></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><div class="odometer-value odometer-last-value odometer-first-value">3</div></span></span></span></span><span class="odometer-formatting-mark">,</span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><div class="odometer-value odometer-last-value odometer-first-value">7</div></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><div class="odometer-value odometer-last-value odometer-first-value">1</div></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><div class="odometer-value odometer-last-value odometer-first-value">0</div></span></span></span></span><span class="odometer-formatting-mark">,</span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><div class="odometer-value odometer-last-value odometer-first-value">8</div></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><div class="odometer-value odometer-last-value odometer-first-value">5</div></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><div class="odometer-value odometer-first-value">2</div><div class="odometer-value odometer-last-value">3</div></span></span></span></span><span class="odometer-formatting-mark odometer-radix-mark">.</span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><div class="odometer-value odometer-first-value">0</div><div class="odometer-value">1</div><div class="odometer-value">2</div><div class="odometer-value">3</div><div class="odometer-value">4</div><div class="odometer-value">5</div><div class="odometer-value">6</div><div class="odometer-value">7</div><div class="odometer-value">8</div><div class="odometer-value">9</div><div class="odometer-value odometer-last-value">0</div></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><div class="odometer-value odometer-first-value">1</div><div class="odometer-value">4</div><div class="odometer-value">8</div><div class="odometer-value">1</div><div class="odometer-value">5</div><div class="odometer-value">8</div><div class="odometer-value">2</div><div class="odometer-value">5</div><div class="odometer-value">9</div><div class="odometer-value">2</div><div class="odometer-value">5</div><div class="odometer-value">9</div><div class="odometer-value">2</div><div class="odometer-value">6</div><div class="odometer-value">9</div><div class="odometer-value">3</div><div class="odometer-value">6</div><div class="odometer-value">0</div><div class="odometer-value">3</div><div class="odometer-value">7</div><div class="odometer-value">0</div><div class="odometer-value">3</div><div class="odometer-value">7</div><div class="odometer-value">0</div><div class="odometer-value">4</div><div class="odometer-value">7</div><div class="odometer-value">1</div><div class="odometer-value">4</div><div class="odometer-value">8</div><div class="odometer-value odometer-last-value">1</div></span></span></span></span></div></div>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+
+<div class="game-buttons-container">
+<ul class="banner-cont-top">
+  <li class="hvr-bounce-in"><a href="javascript:loginAlert()"><button type="button" class="btn btn-lg btn-danger" data-toggle="modal">라이브카지노</button></a></li>
+  <li class="hvr-bounce-in"><a href="javascript:loginAlert()"><button type="button" class="btn btn-lg btn-danger" data-toggle="modal">슬롯게임</button></a></li>
+  <li class="hvr-bounce-in"><a href="javascript:loginAlert()"><button type="button" class="btn btn-lg btn-danger" data-toggle="modal">스포츠</button></a></li>
+  <li class="hvr-bounce-in"><a href="javascript:loginAlert()"><button type="button" class="btn btn-lg btn-danger" data-toggle="modal">미니게임</button></a></li>
+</ul>
+</div>
+
+<div class="main-board-line">
+<div class="main-board-list">
+  <ul class="tabs">
+      <li class="tab1 noticeTab active" onclick="openTab(event, 'tab1', 'Notice')">공지사항</li>
+      <li class="tab1 eventTab" onclick="openTab(event, 'tab1', 'Event')">이벤트</li>
+  </ul>
+  <div class="news-ticker-wrap">
+      <ul class="tab1Content list" id="idNotice">
+          <li><a href="javascript:loginAlert()" class="inner"><div class="date"></div><div class="subject">3333</div></a></li><li><a href="javascript:loginAlert()" class="inner"><div class="date"></div><div class="subject">222</div></a></li><li><a href="javascript:loginAlert()" class="inner"><div class="date"></div><div class="subject">1111</div></a></li>            </ul>
+      <ul class="tab1Content list" id="idEvent" style="display:none;">
+          <li><a href="javascript:;" onclick="loginAlert()" class="inner"><div class="subject">회원가입 이벤트</div></a></li><li><a href="javascript:;" onclick="loginAlert()" class="inner"><div class="subject">댓글 못쓰게 하기 이벤트</div></a></li><li><a href="javascript:;" onclick="loginAlert()" class="inner"><div class="subject">이벤트</div></a></li>            </ul>
+  </div>
+</div>
+
+<div class="main-board-list">
+  <ul class="tabs">
+      <li class="tab2 noticeTab active" onclick="openTab(event, 'tab2', 'Charge')">실시간입금현황</li>
+      <li class="tab2 eventTab" onclick="openTab(event, 'tab2', 'Exchange')">실시간출금현황</li>
+  </ul>
+  <div class="news-ticker-wrap">
+      <ul class="tab2Content list" id="idCharge">
+                              <li>
+                  <div class="inner">
+                      <span class="date2">2023-05-21 02:12</span>
+                      <span class="money">300,000원</span>
+                      <span class="nickname">Ap****</span>
+                  </div>
+              </li>
+                              <li>
+                  <div class="inner">
+                      <span class="date2">2023-05-21 02:12</span>
+                      <span class="money">300,000원</span>
+                      <span class="nickname">Ap****</span>
+                  </div>
+              </li>
+                              <li>
+                  <div class="inner">
+                      <span class="date2">2023-05-19 22:17</span>
+                      <span class="money">10,000원</span>
+                      <span class="nickname">Ap****</span>
+                  </div>
+              </li>
+                              <li>
+                  <div class="inner">
+                      <span class="date2">2023-05-19 20:50</span>
+                      <span class="money">10,000원</span>
+                      <span class="nickname">cr****</span>
+                  </div>
+              </li>
+                              <li>
+                  <div class="inner">
+                      <span class="date2">2023-05-19 18:49</span>
+                      <span class="money">10,000원</span>
+                      <span class="nickname">cr****</span>
+                  </div>
+              </li>
+                      </ul>
+      <ul class="tab2Content list" id="idExchange" style="display:none;">
+                              <li>
+                  <div class="inner">
+                      <span class="date2">2023-05-21 02:14</span>
+                      <span class="money">50,000원</span>
+                      <span class="nickname">Ap****</span>
+                  </div>
+              </li>
+                              <li>
+                  <div class="inner">
+                      <span class="date2">2023-05-16 14:14</span>
+                      <span class="money">10,000원</span>
+                      <span class="nickname">Ap****</span>
+                  </div>
+              </li>
+                              <li>
+                  <div class="inner">
+                      <span class="date2">2023-05-06 21:39</span>
+                      <span class="money">50,000원</span>
+                      <span class="nickname">34****</span>
+                  </div>
+              </li>
+                              <li>
+                  <div class="inner">
+                      <span class="date2">2023-05-06 21:06</span>
+                      <span class="money">50,000원</span>
+                      <span class="nickname">34****</span>
+                  </div>
+              </li>
+                              <li>
+                  <div class="inner">
+                      <span class="date2">2023-05-06 21:02</span>
+                      <span class="money">50,000원</span>
+                      <span class="nickname">34****</span>
+                  </div>
+              </li>
+                      </ul>
+  </div>
+</div>
+
+<div class="main-sns-wrap">
+                              <div class="sns-box telegram">
+                                      <div class="box">
+                      <span class="tit">텔레그램</span>
+                      <span class="text">tetet</span>
+                  </div>
+                              </div>
+                                  <div class="sns-box kakaotalk">
+                                      <div class="box">
+                      <span class="tit">카톡</span>
+                      <span class="text">tete</span>
+                  </div>
+                              </div>
+                  </div>
+</div>
+
+<script>
+function openCasino(action, casino, game, game_type) {
+  let frm = document._frmGame_;
+  frm.action = action;
+  frm.casino.value = casino;
+  frm.game.value = game;
+  frm.game_type.value = game_type;
+
+  let wndGame = window.open("", "casGame");
+
+  frm.target = "casGame";
+  frm.submit();
+}
+
+function openGame(url, game) {
+              location.href = '/user/login';
+      }
+
+function playMainGame(action, casino, game, gameType, technology, platform) {
+  let frm = document._frmGame_;
+  frm.action = action;
+  frm.casino.value = casino;
+  frm.game.value = game;
+  frm.game_type.value = gameType;
+  frm.technology.value = technology;
+  frm.platform.value = platform;
+
+  let wndGame = window.open("", "casGame");
+
+  frm.target = "casGame";
+  frm.submit();
+}
+
+  let numCount = 63710551.01;
+
+function circleNum() {
+  odometer.innerHTML = numCount;
+  numCount += 1;
+}
+
+
+function openTab(evt, tabClass, tabName) {
+  var i, tabcontent = document.getElementsByClassName(tabClass + 'Content');
+  for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+  }
+
+  var i, tablinks = document.getElementsByClassName(tabClass);
+  for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  document.getElementById('id' + tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+setInterval(function() {
+  circleNum();
+}, 2500);
+
+setTimeout(function() {
+  circleNum();
+}, 500);
+
+$(function() {
+  $('#layer_casino_slot .casino_1_close').click(function(e) {
+      e.preventDefault()
+      $('#layer_casino_slot').animate({
+          opacity: 0
+      }).css({
+          display: 'none'
+      })
+  })
+})
+</script>        </div>
+<footer id="footer">
+<div class="inner_wrap">
+  <div class="quick-menu" onclick="loginAlert()">
+          <div class="consultation">
+  <a href="javascript:void(0);" onclick="openChat()">
+      <div class="icon"><svg id="Layer_1" x="0" y="0" viewBox="0 0 15 16" xml:space="preserve" aria-hidden="true">
+              <path d="M1.3,16c-0.7,0-1.1-0.3-1.2-0.8c-0.3-0.8,0.5-1.3,0.8-1.5c0.6-0.4,0.9-0.7,1-1c0-0.2-0.1-0.4-0.3-0.7c0,0,0-0.1-0.1-0.1 C0.5,10.6,0,9,0,7.4C0,3.3,3.4,0,7.5,0C11.6,0,15,3.3,15,7.4s-3.4,7.4-7.5,7.4c-0.5,0-1-0.1-1.5-0.2C3.4,15.9,1.5,16,1.5,16 C1.4,16,1.4,16,1.3,16z M3.3,10.9c0.5,0.7,0.7,1.5,0.6,2.2c0,0.1-0.1,0.3-0.1,0.4c0.5-0.2,1-0.4,1.6-0.7c0.2-0.1,0.4-0.2,0.6-0.1 c0,0,0.1,0,0.1,0c0.4,0.1,0.9,0.2,1.4,0.2c3,0,5.5-2.4,5.5-5.4S10.5,2,7.5,2C4.5,2,2,4.4,2,7.4c0,1.2,0.4,2.4,1.2,3.3 C3.2,10.8,3.3,10.8,3.3,10.9z"></path>
+          </svg></div>
+      <p>채팅</p>
+  </a>
+</div>
+
+<script type="text/javascript">
+
+  function openChat() {
+      let aData = {};
+
+      $.ajax({
+          type: 'GET',
+          url: '/site/open-chat',
+          data: aData,
+          dataType: 'JSON',
+          success: function(data) {
+              location.reload();
+          },
+          error: function(e) {
+              alert('채팅 실행 중 오류가 발생했습니다.  관리자에게 문의 하세요.');
+          }
+      });
+  }
+</script>        </div>
+
+  <div class="footer_bottom">
+      <div class="inner_wrap">
+          <div class="site_logos"></div>
+      </div>
+  </div>
+</div>
+</footer>
+
+<!-- 공지사항 -->
+<div class="layer_popup_swiper" style="display: none;">
+  <div class="swiper-container swiper-container-initialized swiper-container-horizontal">
+      <div class="swiper-wrapper" style="transition-duration: 0ms;">
+          <!-- 공지사항 -->
+                      </div>
+  <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+  <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>
+</div>
+<!-- //공지사항 -->
+
+<div id="layer_casino_slot" class="popup_wrapper visible">
+<div class="popup_content popup_style">
+  <div class="popup_wrap">
+      <div class="close_box">
+          <a href="#" class="casino_1_close"><img src="./img/common/popup_close.png"></a>
+      </div>
+      <div class="popupbox popup_regist">
+          <!-- 로딩시 노출 -->
+          <div class="slot_loding_wrap" style="display: block;">
+              <div class="slot_loding">
+                  <img src="/img/common/img_logo.png"><br><img src="./img/common/loding.gif" style="padding:50px 0 30px 0"><br>게임실행중 입니다.<br>로딩이 완료 될때까지 잠시만 기다려 주세요.
+              </div>
+          </div>
+
+          <!-- // 로딩시 노출 -->
+
+          <div class="title1" style="display: none;">
+          </div>
+          <ul class="slot_item_list" style="display: none;">
+          </ul>
+
+          <div class="btn_wrap_center">
+              <a href="#" class="btn_ui btn_medium navy casino_1_close"><span>닫기</span></a>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+
+<div id="layer_join" class="popup_wrapper visible">
+<div class="popup_content popup_style">
+  <div class="popup_wrap">
+      <div class="popupbox popup_regist">
+          <a href="#" class="close_box" onclick="closePopup('join')"></a>
+          <div class="title1">회원가입</div>
+          <div class="signup_ly">
+              <form id="regist-form" action="/user/act" method="post">
+<input type="hidden" name="_csrf" value="h-KZuwdU_onBAQQflY8c2uZ8WwdrS10g2NlTmQfyTxDCgemWVmGq-o4xQHKm-lS4tA0wRh0PaxSZvBX0dYclWQ==">                    <input type="hidden" name="mode" value="regist">                    <div class="board_form">
+                  <dl>
+                      <dt scope="row"><label for="username">아이디<span class="icon_bul">필수</span></label></dt>
+                      <dd>
+                          <input type="text" id="username" name="username" placeholder="최대20자(영문, 숫자, - 제외 특수문자 불가)" class="input_text">
+                          <span class="hint">영문, 숫자만 입력가능하며 최소 6~20자로 입력하세요.</span>
+                      </dd>
+                  </dl>
+                  <dl>
+                      <dt scope="row"><label for="passwd">비밀번호<span class="icon_bul">필수</span></label></dt>
+                      <dd>
+                          <input type="password" id="passwd" name="passwd" placeholder="비밀번호" class="input_text" autocomplete="off">
+                          <span class="hint">영문, 숫자를 한자 이상 반드시 포함한 6~16자로 입력해주세요.</span>
+                      </dd>
+                  </dl>
+                  <dl>
+                      <dt scope="row"><label for="passwd2">비밀번호 확인<span class="icon_bul">필수</span></label></dt>
+                      <dd>
+                          <input type="password" id="passwd2" name="passwd2" placeholder="비밀번호 확인" class="input_text" autocomplete="off">
+                      </dd>
+                  </dl>
+                  <dl>
+                      <dt scope="row"><label for="password_exchange">환전 비밀번호<span class="icon_bul">필수</span></label></dt>
+                      <dd>
+                          <input type="password" id="password_exchange" name="password_exchange" placeholder="환전 비밀번호" class="input_text" autocomplete="off">
+                          <span class="hint">영문, 숫자를 한자 이상 반드시 포함하여 입력해주세요.</span>
+                      </dd>
+                  </dl>
+                  <dl>
+                      <dt scope="row"><label for="nickname">닉네임<span class="icon_bul">필수</span></label></dt>
+                      <dd>
+                          <input type="text" id="nickname" name="nickname" placeholder="" class="input_text">
+                      </dd>
+                  </dl>
+                  <dl>
+                      <dt scope="row"><label for="name">이름<span class="icon_bul">필수</span></label></dt>
+                      <dd>
+                          <input type="text" id="name" name="name" placeholder="" class="input_text">
+                      </dd>
+                  </dl>
+                  <dl>
+                      <dt scope="row"><label for="phone">휴대폰번호<span class="icon_bul">필수</span></label></dt>
+                      <dd>
+                          <div class="number_box">
+                              <span class="selectbox">
+                                  <select id="hp1" name="hp1">
+                                      <option value="010" selected="">010</option>
+                                      <option value="011">011</option>
+                                  </select>
+                              </span>
+                              <span class="dash"></span>
+                              <input type="text" id="hp2" name="hp2" maxlength="4" title="휴대전화번호 중간자리" hname="휴대전화번호 중간자리" required="required" class="input_text">
+                              <span class="dash"></span>
+                              <input type="text" id="hp3" name="hp3" maxlength="4" title="휴대전화번호 마지막자리" hname="휴대전화번호 마지막자리" required="required" class="input_text">
+                          </div>
+                                                      </dd>
+                  </dl>
+                  <dl>
+                      <dt scope="row"><label for="code">추천지점 코드<span class="icon_bul">필수</span></label></dt>
+                      <dd>
+                          <input type="text" id="branch_code" name="branch_code" value="" placeholder="가입코드" class="input_text" autocomplete="off">
+                      </dd>
+                  </dl>
+                  <dl>
+                      <dt scope="row"><label for="bank">은행<span class="icon_bul">필수</span></label></dt>
+                      <dd>
+                          <span class="selectbox">
+                              <select name="bank">
+                                  <option value="기업은행">기업은행</option><option value="국민은행">국민은행</option><option value="광주은행">광주은행</option><option value="경남은행">경남은행</option><option value="농협">농협</option><option value="농협중앙">농협중앙</option><option value="단위농협">단위농협</option><option value="새마을금고">새마을금고</option><option value="부산은행">부산은행</option><option value="대구은행">대구은행</option><option value="상호저축은행">상호저축은행</option><option value="산업은행">산업은행</option><option value="수협">수협</option><option value="신협">신협</option><option value="신한은행">신한은행</option><option value="시티은행">시티은행</option><option value="우리은행">우리은행</option><option value="우체국">우체국</option><option value="SC제일은행">SC제일은행</option><option value="전북은행">전북은행</option><option value="제주은행">제주은행</option><option value="KEB하나은행">KEB하나은행</option><option value="카카오뱅크">카카오뱅크</option><option value="케이뱅크">케이뱅크</option><option value="펀드온라인코리아">펀드온라인코리아</option><option value="산림조합">산림조합</option><option value="토스뱅크">토스뱅크</option>                                    </select>
+                          </span>
+                      </dd>
+                  </dl>
+                  <dl>
+                      <dt scope="row"><label for="bank_owner">예금주<span class="icon_bul">필수</span></label></dt>
+                      <dd>
+                          <input type="text" id="bank_owner" name="bank_owner" placeholder="" class="input_text">
+                      </dd>
+                  </dl>
+                  <dl>
+                      <dt scope="row"><label for="bank_no">계좌번호<span class="icon_bul">필수</span></label></dt>
+                      <dd>
+                          <span class="flexbox">
+                              <input type="text" id="bank_no" name="bank_no" placeholder="계좌번호 입력" class="input_text">
+                              <!--<button type="button" class="btn_ui btn_medium gray">확인</button>-->
+                          </span>
+                      </dd>
+                  </dl>
+              </div>
+              <div class="btn_ui_area">
+                  <!-- <button type="button" class="btn_join" onclick="goRegist('regist-form')">회원가입</button> -->
+                  <button type="button" class="btn_ui btn_medium navy" onclick="goRegist('regist-form')"><span>회원가입</span></button>
+              </div>
+              </form>                </div>
+      </div>
+  </div>
+</div>
+</div>
+
+<script type="text/javascript">
+function checkUsername(frmId, inputId) {
+  var form = $('#' + frmId);
+  if ($('#' + inputId).val().trim() == "") {
+      alert('사용할 아이디를 입력하세요.');
+      return;
+  }
+
+  var aFormData = {
+      'mode': 'check-username',
+      'username': $('#' + inputId).val(),
+  };
+
+  $.ajax({
+      type: 'POST',
+      url: form.attr('action'),
+      data: aFormData,
+      dataType: 'JSON',
+      success: function(data) {
+          alert(data.msg);
+      },
+      error: function(e) {
+          alert('실행 중 오류가 발생했습니다.  관리자에게 문의 하세요.');
+      }
+  });
+}
+
+
+function sendConfirmSms(frmId) {
+  var form = $('#' + frmId);
+  if ($('#hp1').val().trim() == "" || $('#hp2').val().trim() == "" || $('#hp3').val().trim() == "") {
+      alert('휴대폰 번호를 입력하세요.');
+      return;
+  }
+
+  var aFormData = {
+      'mode': 'sms-confirm',
+      'hp': $('#hp1').val() + "-" + $('#hp2').val() + "-" + $('#hp3').val(),
+  };
+
+  $.ajax({
+      type: 'POST',
+      url: form.attr('action'),
+      data: aFormData,
+      dataType: 'JSON',
+      success: function(data) {
+          if (data.code == 0) {
+              $("#confirm_no").removeAttr("readonly");
+          }
+
+          alert(data.msg);
+      },
+      error: function(e) {
+          alert('실행 중 오류가 발생했습니다.  관리자에게 문의 하세요.');
+      }
+  });
+}
+
+function setEmail(id, email) {
+  $('#' + id).val(email);
+}
+
+function checkAllAgreement(item) {
+  for (i = 1; i <= 5; i++) {
+      if (item.checked) {
+          document.getElementById('agree' + i).checked = true;
+      } else {
+          document.getElementById('agree' + i).checked = false;
+      }
+  }
+}
+
+function goRegist(frmId) {
+  postSubmit(frmId);
+}
+
+function openEmailPolicy() {
+  $("#emailPolicy").addClass('open');
+}
+
+function closeEmailPolicy() {
+  $("#emailPolicy").removeClass('open');
+}
+
+function closeTodayNotice(id) {
+  if ($('input:checkbox[id="idNoticeDay' + id + '"]').is(":checked") == true) {
+      var d = new Date();
+      d.setTime(d.getTime() + (24 * 60 * 60 * 1000));
+      var expires = 'expires=' + d.toUTCString();
+
+      document.cookie = 'np' + id + '=1' + '; ' + expires + ';';
+  }
+
+  $('#np' + id).remove();
+
+  if (front.popupSwiper) {
+      front.popupSwiper.update()
+  }
+
+  if ($(".layer_popup_swiper .popup-foot").length == 0) {
+      $(".layer_popup_swiper").hide();
+  }
+}
+
+
+function closeNotice(id) {
+  $('#np' + id).remove();
+
+  if (front.popupSwiper) {
+      front.popupSwiper.update()
+  }
+
+  if ($(".layer_popup_swiper .popup-foot").length == 0) {
+      $(".layer_popup_swiper").hide();
+  }
+}
+
+if ($(".layer_popup_swiper .popup-foot").length == 0) {
+  $(".layer_popup_swiper").hide();
+}
+
+function closePopup(value) {
+  $('#layer_' + value).animate({
+      opacity: 0
+  }, 0).css({
+      display: 'none'
+  })
+}
+
+$(function() {
+  // $('.slot_list li a, .game_list li a').click(function(e) {
+  //     e.preventDefault()
+  //     $('.slot_list li').removeClass('on')
+  //     $(this).parent().addClass('on');
+
+  //     $('#layer_slot').animate({
+  //         opacity: 1
+  //     }).css({
+  //         display: 'block '
+  //     })
+  // })
+
+  // $('.casino_1_close').click(function(e) {
+  //     e.preventDefault()
+  //     $('#layer_slot').animate({
+  //         opacity: 0
+  //     }).css({
+  //         display: 'none'
+  //     })
+  // })
+
+  $('.btn_login.join').click(function(e) {
+      e.preventDefault()
+      $('#layer_join').animate({
+          opacity: 1
+      }).css({
+          display: 'block '
+      })
+  })
+
+  $('.casino_1_close').click(function(e) {
+      e.preventDefault()
+      $('#layer_join').animate({
+          opacity: 0
+      }).css({
+          display: 'none'
+      })
+  })
+});
+</script>        <article class="quick_nav">
+<h2>이용가이드</h2>
+<!-- quick_box -->
+<div class="quick_area">
+  <ul class="quick-info">
+      <li>
+          <a href="/game-sports/multi">
+              <span class="icon"><i class="fal fa-sport-6046"></i></span>
+              <span class="txt">스포츠</span>
+          </a>
+      </li>
+      <li>
+          <a href="/game-powerball/bet">
+              <span class="icon"><i class="fal fa-dot-circle"></i></span>
+              <span class="txt">파워볼</span>
+          </a>
+      </li>
+      <li>
+          <a href="/game-powerball/bet">
+              <span class="icon"><i class="fal fa-heading"></i></span>
+              <span class="txt">파워사다리</span>
+          </a>
+      </li>
+  </ul>
+</div>
+<a href="#" class="btn_top"><span class="blind">상단으로 이동</span></a>
+</article>    </div>
+
+              
+<script src="/js/submit.js?v09"></script>
+<script src="/js/common.js?v09"></script>
+<script src="/js/main.js?v09"></script>
+<script src="/js/number.js?v09"></script>
+<script src="/js/cookie.js?v09"></script>
+<script src="/assets/e5f3082/yii.js"></script>
+<script src="/assets/e5f3082/yii.activeForm.js"></script>
+<script>jQuery(function ($) {
+jQuery('#login-form').yiiActiveForm([], []);
+jQuery('#login-form-mobile').yiiActiveForm([], []);
+jQuery('#regist-form').yiiActiveForm([], []);
+});</script>
+
+
+<div id="loom-companion-mv3" ext-id="liecbddmkiiihnedobmlmillhodjkdmb"><section id="shadow-host-companion"></section></div><ff-chrome-app-container id="ff-recorder-pop" style="inset: 0px; pointer-events: none; position: fixed; z-index: 9999999; background: transparent;"><div class="style__appMainContainer___StS54"><div class="style__clickable_container_canvas___0srlL"></div><div class="style__clickable_container_canvas___Q8z33"></div></div></ff-chrome-app-container></body>
+</html>
